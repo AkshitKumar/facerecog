@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title> Face Recognition App </title>
+		<link rel='stylesheet' href='main.css' type='text/css' media='all'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	</head>
+
+	<body>
+		<center>
+			<div class="contentarea">
+				<h1> Face Recognition Application </h1>
+				Enter name : <input id='name'> </input>
+				<br />
+				<div class = "camera">
+					<video id = "video"> Video stream not available. </video>
+					<button id="takephoto"> Take Photo </button>
+				</div>
+
+				<canvas id = "canvas">
+				</canvas>
+
+				<div class="output">
+					<img id="photo" alt="Photo will appear here">
+				</div>
+
+				<br />
+				<button id="check"> Check </button>
+
+				<p id='output'> </p>
+				<p id= 'access'> </p>
+			</div>
+		</center>
+		<script src='capture.js'>
+		</script>
+	</body>
+</html>
