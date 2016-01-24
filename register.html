@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Your Picture</title>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' href='main.css' type='text/css' media='all'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	
+</head>
+<body>
+	<div id="loader"></img></div>
+	<center>
+<div class="contentarea">
+	<h1> Registration Portal </h1>
+	<p> Enter your name and register with 4 to 5 images of yours for the face recognition </p>
+	<a href="index.html"><button>Back</button></a><br><br>
+	Enter your Name : <input id='name'> </input>
+	<br /> 
+	<div class="camera">
+		<video id="video">Video stream not available.</video>
+		<button id="startbutton">Take photo</button>
+	</div>
+	<canvas id="canvas">
+	</canvas>
+	<div class="output">
+		<img id="photo" alt="The screen capture will apear in this box">
+	</div>
+	<br/>
+	<button id = "register"> Register </button>
+	<p id='output'> </p>
+	<!-- <p id='access'> </p> -->
+</div>
+</center>
+<script src='register.js'>
+	</script>
+</body>
+</html>
